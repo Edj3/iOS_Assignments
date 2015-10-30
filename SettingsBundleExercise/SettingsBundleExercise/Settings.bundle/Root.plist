@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Settings Bundle App</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Field 1</string>
+			<key>Key</key>
+			<string>field1</string>
+			<key>DefaultValue</key>
+			<string>Enter Text to Save</string>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>AutocorrectionType</key>
+			<string>Default</string>
+			<key>IsSecure</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Field 2</string>
+			<key>Key</key>
+			<string>field2</string>
+			<key>DefaultValue</key>
+			<string>Enter Text to Save</string>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>AutocorrectionType</key>
+			<string>Default</string>
+			<key>IsSecure</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSSliderSpecifier</string>
+			<key>Key</key>
+			<string>slider1</string>
+			<key>DefaultValue</key>
+			<integer>0</integer>
+			<key>MinimumValue</key>
+			<integer>0</integer>
+			<key>MaximumValue</key>
+			<integer>100</integer>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSSliderSpecifier</string>
+			<key>Key</key>
+			<string>slider2</string>
+			<key>DefaultValue</key>
+			<integer>0</integer>
+			<key>MinimumValue</key>
+			<integer>0</integer>
+			<key>MaximumValue</key>
+			<integer>100</integer>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Green / Blue</string>
+			<key>Key</key>
+			<string>switch1</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Green / Red</string>
+			<key>Key</key>
+			<string>switch2</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

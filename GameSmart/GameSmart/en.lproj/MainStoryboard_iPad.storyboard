@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController storyboardIdentifier="Launch" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="GameSmartBackground.jpg" id="KP0-tw-Nog">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="GameSmartLogo.png" id="8MG-v6-xx2">
+                                <rect key="frame" x="111" y="381" width="546" height="241"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Search View Controller - Search-->
+        <scene sceneID="4tM-7w-BV4">
+            <objects>
+                <viewController storyboardIdentifier="Search" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sMx-y1-GGd" customClass="SearchViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="18o-aX-vXj">
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="SearchViewBackground.jpg" id="c21-E4-t4m">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="911"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Search for a Game" textAlignment="center" minimumFontSize="17" id="GqO-le-zn8">
+                                <rect key="frame" x="20" y="44" width="728" height="68"/>
+                                <color key="backgroundColor" red="0.082352943720000002" green="0.050980396570000003" blue="0.019607843829999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.050980396570000003" green="0.96862751250000001" blue="0.53725492949999998" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="50"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="M7q-mw-c2C">
+                                <rect key="frame" x="86" y="148" width="596" height="763"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell alpha="0.80000000000000004" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="searchCell" id="HMW-dq-Czc">
+                                        <rect key="frame" x="0.0" y="22" width="596" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="576" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="tjn-nh-GBP" kind="push" id="CON-CL-4vd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="B0X-V4-Fis"/>
+                    <connections>
+                        <outlet property="searchField" destination="GqO-le-zn8" id="STD-n3-7N4"/>
+                        <outlet property="searchTable" destination="M7q-mw-c2C" id="Kzq-HR-Tqs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afY-SA-cG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2990" y="-184"/>
+        </scene>
+        <!--Detail Search View Controller - Game Searched-->
+        <scene sceneID="1uF-BK-6FK">
+            <objects>
+                <viewController storyboardIdentifier="SearchDetail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tjn-nh-GBP" customClass="DetailSearchViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K39-gL-cYD">
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="SearchViewBackground.jpg" id="cgU-ai-lUt">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="911"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="Detail of Searched Game Goes Here" textAlignment="center" id="Hmv-tr-aYY">
+                                <rect key="frame" x="59" y="425" width="638" height="486"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="sP5-xA-zVw">
+                                <rect key="frame" x="59" y="0.0" width="638" height="427"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Game Searched" id="4IA-T3-yCF"/>
+                    <connections>
+                        <outlet property="detailSearchImage" destination="sP5-xA-zVw" id="as8-oQ-frE"/>
+                        <outlet property="detailSearchView" destination="Hmv-tr-aYY" id="tfX-eq-gcV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vzQ-Zg-CAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3819" y="-184"/>
+        </scene>
+        <!--Likes View Controller - My Games-->
+        <scene sceneID="X38-3u-hHK">
+            <objects>
+                <viewController storyboardIdentifier="Likes" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TBw-sO-L7T" customClass="LikesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pxa-EB-Uv6">
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="LikesBackgroundImage.jpg" id="Htm-J2-CIT">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="911"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="J3d-ep-9Mp">
+                                <rect key="frame" x="85" y="80" width="598" height="831"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="xn7-qy-PPO">
+                                        <rect key="frame" x="0.0" y="22" width="598" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="578" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="ZUf-L4-IHs" kind="push" id="srW-le-Yyw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Games" id="T9e-Vv-IQN"/>
+                    <connections>
+                        <outlet property="myGamesTable" destination="J3d-ep-9Mp" id="xhY-yV-lS4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8o-F9-Rrq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2990" y="968"/>
+        </scene>
+        <!--Detail Likes View Controller - Selected Game-->
+        <scene sceneID="Dhr-f2-m7u">
+            <objects>
+                <viewController storyboardIdentifier="LikesDetail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZUf-L4-IHs" customClass="DetailLikesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Klf-O4-esP">
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="LikesBackgroundImage.jpg" id="U5U-yu-fP7">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="911"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="YpW-UJ-50v">
+                                <rect key="frame" x="87" y="0.0" width="595" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="Detail of Liked Game Goes Here" textAlignment="center" id="uFe-sR-2un">
+                                <rect key="frame" x="87" y="499" width="595" height="412"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Selected Game" id="eIK-7P-e6s"/>
+                    <connections>
+                        <outlet property="likesDetailTextView" destination="uFe-sR-2un" id="3zd-DI-DRV"/>
+                        <outlet property="likesDisplayImage" destination="YpW-UJ-50v" id="Apb-k9-vXd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="28t-CH-HA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3819" y="968"/>
+        </scene>
+        <!--Collection View Controller - Collection-->
+        <scene sceneID="gQG-yS-mDW">
+            <objects>
+                <viewController storyboardIdentifier="Collection" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oqg-zN-S3T" customClass="CollectionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WIh-Jb-IbU">
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="CollectionBackgroundImage.jpg" id="vTq-E2-B0R">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="911"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="CwV-Sh-lew">
+                                <rect key="frame" x="0.0" y="95" width="768" height="721"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Collection" id="9lU-I0-Z0A"/>
+                    <connections>
+                        <outlet property="showCase" destination="CwV-Sh-lew" id="5C1-9d-phg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXF-id-EPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2990" y="2073"/>
+        </scene>
+        <!--Navigation Controller - Search-->
+        <scene sceneID="vbu-zF-Qec">
+            <objects>
+                <navigationController storyboardIdentifier="NavSearch" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bdd-S5-Sj2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="SearchIcon.png" id="gtV-pV-4sx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sAm-eO-kOR">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sMx-y1-GGd" kind="relationship" relationship="rootViewController" id="jeY-fZ-X3p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQr-dF-ePe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2016" y="-184"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="iWK-no-g05">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i6x-yV-20G" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="kp7-OD-cq2">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bdd-S5-Sj2" kind="relationship" relationship="viewControllers" id="CVt-bg-pRh"/>
+                        <segue destination="mYz-ce-hbb" kind="relationship" relationship="viewControllers" id="L9u-bs-qaF"/>
+                        <segue destination="GAx-RV-P6a" kind="relationship" relationship="viewControllers" id="UYM-sn-eYX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRJ-e6-fLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="-184"/>
+        </scene>
+        <!--Navigation Controller - My Games-->
+        <scene sceneID="giz-ms-rn5">
+            <objects>
+                <navigationController storyboardIdentifier="NavLikes" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mYz-ce-hbb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Games" image="ThumbsUpIcon.png" id="e2h-K7-nAl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U9Q-KL-tmt">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TBw-sO-L7T" kind="relationship" relationship="rootViewController" id="kg6-zo-k8o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vo5-wf-qfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2016" y="968"/>
+        </scene>
+        <!--Navigation Controller - Album-->
+        <scene sceneID="DLI-sf-7fg">
+            <objects>
+                <navigationController storyboardIdentifier="NavCollection" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GAx-RV-P6a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Album" image="CollectionIcon.png" id="82E-6w-Cbb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k2i-rU-sXQ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oqg-zN-S3T" kind="relationship" relationship="rootViewController" id="8dG-AF-Ofa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JuV-f4-uFO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2016" y="2073"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CollectionBackgroundImage.jpg" width="1280" height="960"/>
+        <image name="CollectionIcon.png" width="32" height="32"/>
+        <image name="GameSmartBackground.jpg" width="450" height="295"/>
+        <image name="GameSmartLogo.png" width="511" height="88"/>
+        <image name="LikesBackgroundImage.jpg" width="1920" height="1200"/>
+        <image name="SearchIcon.png" width="32" height="32"/>
+        <image name="SearchViewBackground.jpg" width="1920" height="1200"/>
+        <image name="ThumbsUpIcon.png" width="25" height="32"/>
+    </resources>
+    <classes>
+        <class className="CollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backgroundImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="showCase" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="DetailLikesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailLikesViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="likesDetailTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="likesDisplayImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="DetailSearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailSearchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailSearchImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="detailSearchView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="LikesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LikesViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backgroundImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="myGamesTable" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="SearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="testSave:"/>
+                <relationship kind="outlet" name="searchField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="searchTable" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="backgroundImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="gameSmartLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="logoLoading" candidateClass="UIActivityIndicatorView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

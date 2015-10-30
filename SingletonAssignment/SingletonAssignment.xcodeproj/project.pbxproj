@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E0E38EC1717D0CB0044E908 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E38EB1717D0CB0044E908 /* UIKit.framework */; };
+		0E0E38EE1717D0CB0044E908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E38ED1717D0CB0044E908 /* Foundation.framework */; };
+		0E0E38F01717D0CB0044E908 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0E38EF1717D0CB0044E908 /* CoreGraphics.framework */; };
+		0E0E38F61717D0CB0044E908 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E0E38F41717D0CB0044E908 /* InfoPlist.strings */; };
+		0E0E38F81717D0CB0044E908 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E38F71717D0CB0044E908 /* main.m */; };
+		0E0E38FC1717D0CB0044E908 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E38FB1717D0CB0044E908 /* AppDelegate.m */; };
+		0E0E38FE1717D0CB0044E908 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E0E38FD1717D0CB0044E908 /* Default.png */; };
+		0E0E39001717D0CB0044E908 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E0E38FF1717D0CB0044E908 /* Default@2x.png */; };
+		0E0E39021717D0CB0044E908 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E0E39011717D0CB0044E908 /* Default-568h@2x.png */; };
+		0E0E390E1717D1690044E908 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E390C1717D1690044E908 /* MyTableViewController.m */; };
+		0E0E390F1717D1690044E908 /* MyTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E0E390D1717D1690044E908 /* MyTableViewController.xib */; };
+		0E0E39121717D1BD0044E908 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E39111717D1BD0044E908 /* Movie.m */; };
+		0E0E39161717D1EA0044E908 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E39141717D1EA0044E908 /* MovieViewController.m */; };
+		0E0E39171717D1EA0044E908 /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E0E39151717D1EA0044E908 /* MovieViewController.xib */; };
+		0E0E391A1717D2110044E908 /* SharedResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E39191717D2110044E908 /* SharedResource.m */; };
+		0E0E391D1717D24A0044E908 /* MyTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E391C1717D24A0044E908 /* MyTableCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E0E38E81717D0CB0044E908 /* SingletonAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingletonAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E0E38EB1717D0CB0044E908 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0E0E38ED1717D0CB0044E908 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0E0E38EF1717D0CB0044E908 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0E0E38F31717D0CB0044E908 /* SingletonAssignment-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SingletonAssignment-Info.plist"; sourceTree = "<group>"; };
+		0E0E38F51717D0CB0044E908 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0E0E38F71717D0CB0044E908 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E0E38F91717D0CB0044E908 /* SingletonAssignment-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SingletonAssignment-Prefix.pch"; sourceTree = "<group>"; };
+		0E0E38FA1717D0CB0044E908 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0E0E38FB1717D0CB0044E908 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0E0E38FD1717D0CB0044E908 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0E0E38FF1717D0CB0044E908 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0E0E39011717D0CB0044E908 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0E0E390B1717D1690044E908 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTableViewController.h; path = ../MyTableViewController.h; sourceTree = "<group>"; };
+		0E0E390C1717D1690044E908 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTableViewController.m; path = ../MyTableViewController.m; sourceTree = "<group>"; };
+		0E0E390D1717D1690044E908 /* MyTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyTableViewController.xib; path = ../MyTableViewController.xib; sourceTree = "<group>"; };
+		0E0E39101717D1BD0044E908 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		0E0E39111717D1BD0044E908 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		0E0E39131717D1EA0044E908 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		0E0E39141717D1EA0044E908 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
+		0E0E39151717D1EA0044E908 /* MovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
+		0E0E39181717D2110044E908 /* SharedResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedResource.h; sourceTree = "<group>"; };
+		0E0E39191717D2110044E908 /* SharedResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedResource.m; sourceTree = "<group>"; };
+		0E0E391B1717D24A0044E908 /* MyTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableCell.h; sourceTree = "<group>"; };
+		0E0E391C1717D24A0044E908 /* MyTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E0E38E51717D0CB0044E908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E0E38EC1717D0CB0044E908 /* UIKit.framework in Frameworks */,
+				0E0E38EE1717D0CB0044E908 /* Foundation.framework in Frameworks */,
+				0E0E38F01717D0CB0044E908 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E0E38DF1717D0CB0044E908 = {
+			isa = PBXGroup;
+			children = (
+				0E0E38F11717D0CB0044E908 /* SingletonAssignment */,
+				0E0E38EA1717D0CB0044E908 /* Frameworks */,
+				0E0E38E91717D0CB0044E908 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0E0E38E91717D0CB0044E908 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E0E38E81717D0CB0044E908 /* SingletonAssignment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E0E38EA1717D0CB0044E908 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E0E38EB1717D0CB0044E908 /* UIKit.framework */,
+				0E0E38ED1717D0CB0044E908 /* Foundation.framework */,
+				0E0E38EF1717D0CB0044E908 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E0E38F11717D0CB0044E908 /* SingletonAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				0E0E38FA1717D0CB0044E908 /* AppDelegate.h */,
+				0E0E38FB1717D0CB0044E908 /* AppDelegate.m */,
+				0E0E39181717D2110044E908 /* SharedResource.h */,
+				0E0E39191717D2110044E908 /* SharedResource.m */,
+				0E0E39101717D1BD0044E908 /* Movie.h */,
+				0E0E39111717D1BD0044E908 /* Movie.m */,
+				0E0E391B1717D24A0044E908 /* MyTableCell.h */,
+				0E0E391C1717D24A0044E908 /* MyTableCell.m */,
+				0E0E390B1717D1690044E908 /* MyTableViewController.h */,
+				0E0E390C1717D1690044E908 /* MyTableViewController.m */,
+				0E0E390D1717D1690044E908 /* MyTableViewController.xib */,
+				0E0E39131717D1EA0044E908 /* MovieViewController.h */,
+				0E0E39141717D1EA0044E908 /* MovieViewController.m */,
+				0E0E39151717D1EA0044E908 /* MovieViewController.xib */,
+				0E0E38F21717D0CB0044E908 /* Supporting Files */,
+			);
+			path = SingletonAssignment;
+			sourceTree = "<group>";
+		};
+		0E0E38F21717D0CB0044E908 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E0E38F31717D0CB0044E908 /* SingletonAssignment-Info.plist */,
+				0E0E38F41717D0CB0044E908 /* InfoPlist.strings */,
+				0E0E38F71717D0CB0044E908 /* main.m */,
+				0E0E38F91717D0CB0044E908 /* SingletonAssignment-Prefix.pch */,
+				0E0E38FD1717D0CB0044E908 /* Default.png */,
+				0E0E38FF1717D0CB0044E908 /* Default@2x.png */,
+				0E0E39011717D0CB0044E908 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E0E38E71717D0CB0044E908 /* SingletonAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E0E39051717D0CB0044E908 /* Build configuration list for PBXNativeTarget "SingletonAssignment" */;
+			buildPhases = (
+				0E0E38E41717D0CB0044E908 /* Sources */,
+				0E0E38E51717D0CB0044E908 /* Frameworks */,
+				0E0E38E61717D0CB0044E908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SingletonAssignment;
+			productName = SingletonAssignment;
+			productReference = 0E0E38E81717D0CB0044E908 /* SingletonAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E0E38E01717D0CB0044E908 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Unbounded;
+			};
+			buildConfigurationList = 0E0E38E31717D0CB0044E908 /* Build configuration list for PBXProject "SingletonAssignment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0E0E38DF1717D0CB0044E908;
+			productRefGroup = 0E0E38E91717D0CB0044E908 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E0E38E71717D0CB0044E908 /* SingletonAssignment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E0E38E61717D0CB0044E908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E0E38F61717D0CB0044E908 /* InfoPlist.strings in Resources */,
+				0E0E38FE1717D0CB0044E908 /* Default.png in Resources */,
+				0E0E39001717D0CB0044E908 /* Default@2x.png in Resources */,
+				0E0E39021717D0CB0044E908 /* Default-568h@2x.png in Resources */,
+				0E0E390F1717D1690044E908 /* MyTableViewController.xib in Resources */,
+				0E0E39171717D1EA0044E908 /* MovieViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E0E38E41717D0CB0044E908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E0E38F81717D0CB0044E908 /* main.m in Sources */,
+				0E0E38FC1717D0CB0044E908 /* AppDelegate.m in Sources */,
+				0E0E390E1717D1690044E908 /* MyTableViewController.m in Sources */,
+				0E0E39121717D1BD0044E908 /* Movie.m in Sources */,
+				0E0E39161717D1EA0044E908 /* MovieViewController.m in Sources */,
+				0E0E391A1717D2110044E908 /* SharedResource.m in Sources */,
+				0E0E391D1717D24A0044E908 /* MyTableCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0E0E38F41717D0CB0044E908 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E0E38F51717D0CB0044E908 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E0E39031717D0CB0044E908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0E0E39041717D0CB0044E908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E0E39061717D0CB0044E908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SingletonAssignment/SingletonAssignment-Prefix.pch";
+				INFOPLIST_FILE = "SingletonAssignment/SingletonAssignment-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0E0E39071717D0CB0044E908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SingletonAssignment/SingletonAssignment-Prefix.pch";
+				INFOPLIST_FILE = "SingletonAssignment/SingletonAssignment-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E0E38E31717D0CB0044E908 /* Build configuration list for PBXProject "SingletonAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E0E39031717D0CB0044E908 /* Debug */,
+				0E0E39041717D0CB0044E908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E0E39051717D0CB0044E908 /* Build configuration list for PBXNativeTarget "SingletonAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E0E39061717D0CB0044E908 /* Debug */,
+				0E0E39071717D0CB0044E908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E0E38E01717D0CB0044E908 /* Project object */;
+}
